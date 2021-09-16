@@ -8,6 +8,24 @@ Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+
 # Dump file
 *.stackdump
 

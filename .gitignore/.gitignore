@@ -25,6 +25,8 @@ ehthumbs_vista.db
 *.cache
 *.ilk
 *.log
+.vs/
+
 
 # Dump file
 *.stackdump

@@ -1,11 +1,11 @@
 ﻿namespace Battleship.Entities
 {
-    public class PLayer : IPlayer
+    public class Player : IPlayer
     {
         public string Name { get; }
         public Field Field { get; }
 
-        public PLayer(string name, Field field)
+        public Player(string name, Field field)
         {
             Name = name;
             Field = field;

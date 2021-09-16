@@ -7,6 +7,4 @@
         Battle = 2,
         Ending = 3
     }
-    
-
 }

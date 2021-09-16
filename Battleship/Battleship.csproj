@@ -48,7 +48,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Direction.cs" />
+    <Compile Include="Entities\Field.cs" />
     <Compile Include="Entities\Game.cs" />
+    <Compile Include="Entities\GameOptions.cs" />
+    <Compile Include="Entities\GameStatus.cs" />
+    <Compile Include="Entities\IField.cs" />
+    <Compile Include="Entities\IPlayer.cs" />
+    <Compile Include="Entities\IShip.cs" />
+    <Compile Include="Entities\Player.cs" />
+    <Compile Include="Entities\Point.cs" />
+    <Compile Include="Entities\PointExtension.cs" />
+    <Compile Include="Entities\Ship.cs" />
+    <Compile Include="Entities\ShotResult.cs" />
+    <Compile Include="Opponent\FieldExtension.cs" />
+    <Compile Include="Views\BattleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\BattleControl.Designer.cs">
+      <DependentUpon>BattleControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DrawExtensions.cs" />
+    <Compile Include="Views\FieldControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\FieldControl.Designer.cs">
+      <DependentUpon>FieldControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FinishControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\FinishControl.Designer.cs">
+      <DependentUpon>FinishControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +89,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\StartControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\StartControl.Designer.cs">
+      <DependentUpon>StartControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PlacingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PlacingControl.Designer.cs">
+      <DependentUpon>PlacingControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -65,7 +109,26 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\BattleControl.resx">
+      <DependentUpon>BattleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FieldControl.resx">
+      <DependentUpon>FieldControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FinishControl.resx">
+      <DependentUpon>FinishControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PlacingControl.resx">
+      <DependentUpon>PlacingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StartControl.resx">
+      <DependentUpon>StartControl.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -80,5 +143,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\hqdefault.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
